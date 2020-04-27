@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Candidature</legend>
+			
+			<form action="recapitulation.php" method="GET">
+								
+				<label>Civilité :</label>
+				<input required type="radio" name="civilité" placeholder="Monsieur" value="M." /> Monsieur
+				<input required type="radio" name="civilité" placeholder="Madame" value="Mme" /> Madame
+				</br>
+				</br>
+				
+				<label>Nom :</label>
+				<input required type="text" name="Nom" placeholder="Saisir votre nom" />
+				</br>
+				</br>
+				
+				<label>Prénom :</label>
+				<input required type="text" name="Prenom" placeholder="Saisir votre prénom" />
+				</br>
+				</br>
+				
+				<label>Date de Naissance :</label>
+				<input required type="date" name="DateNaissance" /> 
+				</br>
+				</br>
+				
+				<label>Numéro de télephone :</label>
+				<input required type="tel" name="NumTel" placeholder="0x-xx-xx-xx-xx" /> 
+				</br>
+				</br>
+				
+				<label>Adresse electronique :</label>
+				<input required type="email" name="email" placeholder="aaaaa@bbbbb.ccc" />
+				</br>
+				</br>
+				
+				<label>Niveau en PHP :</label>
+				</br>
+				<input required type="radio" name="niveau" placeholder="débutant" value="Débutant" /> Débutant
+				<input required type="radio" name="niveau" placeholder="moyen" value="Moyen" /> Moyen
+				<input required type="radio" name="niveau" placeholder="bon" value="Bon" /> Bon 
+				<input required type="radio" name="niveau" placeholder="excellent" value="Excellent" /> Excellent
+				</br>
+				</br>
+				
+				<label>Frameworks PHP :</label>
+				</br>
+				<input type="checkbox" name="frameworks[]" value="Symfony" /> Symfony 
+                <input type="checkbox" name="frameworks[]" value="CodeIgniter" /> CodeIgniter 
+                <input type="checkbox" name="frameworks[]" value="FuelPHP" /> FuelPHP 
+                <input type="checkbox" name="frameworks[]" value="CakePHP" /> CakePHP 
+                <input type="checkbox" name="frameworks[]" value="Laravel" /> Laravel 
+                <br/>
+				</br>
+				</br>
+				
+				<label>Moi :</label>
+				</br>
+				<textarea name="zonetxt" rows="5" cols="50"> </textarea>
+				</br>
+				
+				<input type="submit" value="Valider" /> 
+				<input type="reset" value="Annuler" />
+			
+			</form>
+		
+		</fieldset>
+		
+	</body>
+	
+</html>
